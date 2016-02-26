@@ -1,0 +1,211 @@
+<html lang="en" >
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body ng-app="BlankApp" ng-cloak>
+
+
+	<!--
+		FLEX GRID
+		Below are some brief examples on how the Angular Material grid works.
+		The values are percentages
+    eg. flex="50"  =  50%
+
+    layout-padding - Adds padding to all flexbox children
+    layout-margin - Adds margin to all flexbox children
+    eg.
+    <div layout="row" layout-sm="column" layout-padding layout-margin>
+      <div flex> Child </div>
+      <div flex> Child </div>
+    </div>
+
+    Layout Containers - https://material.angularjs.org/latest/layout/container
+    Layout Children - https://material.angularjs.org/latest/layout/children
+    Child Alignment - https://material.angularjs.org/latest/layout/alignment
+    Extra Options - https://material.angularjs.org/latest/layout/options
+	-->
+
+
+  <h1 class="help-heading">Flex Grid</h1>
+
+  <div class="container">
+
+    <div layout="row" layout="column" layout-padding>
+      <div flex>
+        I'm just a normal grid block
+      </div>
+      <div flex>
+        I'm just a normal grid block
+      </div>
+    </div>
+
+    <div layout="row" layout-xs="column" layout-padding>
+
+      <div flex>
+        I'm just a normal grid block that changes to 100% width on extra small screens.
+      </div>
+      <div flex>
+        I'm just a normal grid block that changes to 100% width on extra small screens.
+      </div>
+    </div>
+
+    <div layout="row" layout-xs="column" layout-padding>
+      <div flex flex-xs="50">
+        I'm to the left and 50% wide on large screens, and 100% wide on small screens.
+        <br>
+        and then 50% wide on extra small screens
+      </div>
+      <div flex flex-xs="50">
+        I'm to the left and 50% wide on large screens, and 100% wide on small screens.
+        <br>
+        and then 50% wide on extra small screens
+      </div>
+    </div>
+
+
+  	<div layout="row" layout-wrap layout-padding>
+  		<div flex flex-sm="25" flex-xs="50">
+  	    25% wide on small screens
+  			<br>
+  			50% wide on extra small screens
+  	  </div>
+  		<div flex flex-sm="25" flex-xs="50">
+  	    25% wide on small screens
+  			<br>
+  			50% wide on extra small screens
+  	  </div>
+  		<div flex flex-sm="25" flex-xs="50">
+  	    25% wide on small screens
+  			<br>
+  			50% wide on extra small screens
+  	  </div>
+  		<div flex flex-sm="25" flex-xs="50">
+  			25% wide on small screens
+  			<br>
+  			50% wide on extra small screens
+  		</div>
+  	</div>
+
+
+  	<div layout="row" layout-wrap layout-padding>
+  		<div flex flex-lg="33" flex-sm="50" flex-xs="100">
+  	    33% wide on large screens
+  			<br>
+  			50% wide on small screens
+  			<br>
+  			100% wide on extra small screens
+  	  </div>
+  		<div flex flex-lg="33" flex-sm="50" flex-xs="100">
+  	    33% wide on large screens
+  			<br>
+  			50% wide on small screens
+  			<br>
+  			100% wide on extra small screens
+  	  </div>
+  		<div flex flex-lg="33" flex-sm="50" flex-xs="100">
+  	    33% wide on large screens
+  			<br>
+  			50% wide on small screens
+  			<br>
+  			100% wide on extra small screens
+  	  </div>
+  	</div>
+
+  </div>
+
+
+
+  <!--
+    CARDS
+    A example of a banner or hero image, with some content.
+  -->
+
+  <h1 class="help-heading">Cards</h1>
+
+  <div class="container" layout="row" layout="column" layout-padding>
+
+    <div flex>
+      <md-card>
+        <div class="card-image">
+					<img ng-src="http://images.asos-media.com/inv/media/9/4/6/9/6109649/grey/image1xxl.jpg" class="md-card-image">
+				</div>
+        <md-card-content>
+          <span class="md-headline">Zip Front Long Bomber Jacket</span>
+          <br>
+          <span class="md-subhead">&pound;89.99</span>
+          <p>Machine Wash According To Instructions On Care Label</p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Add to Cart</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+
+    <div flex>
+      <md-card>
+        <div class="card-image">
+					<img ng-src="http://images.asos-media.com/inv/media/9/4/6/9/6109649/image2xxl.jpg" class="md-card-image">
+				</div>
+        <md-card-content>
+          <span class="md-headline">Zip Side Long Bomber Jacket</span>
+          <br>
+          <span class="md-subhead">&pound;89.99</span>
+          <p>Body: 93% Cotton, 7% Polyester.</p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Add to Cart</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+
+  </div>
+
+
+
+  <!--
+    BANNER / HERO IMAGE
+    A example of a banner or hero image, with some content.
+  -->
+
+  <h1 class="help-heading">Banner / Hero Image</h1>
+
+	<div class="banner" layout="row" layout-align="center stretch">
+    <div class="banner-content" flex layout="column" layout-align="center center">
+      <div class="md-display-3">Display</div>
+      <div class="md-headline">Headline</div>
+      <md-button class="md-raised md-cornered">Button</md-button>
+    </div>
+	</div>
+
+
+  <div class="container" style="margin-bottom: 60px;">
+    <h1>How To Read Your Customers' Minds With One Email</h1>
+    <p>How well do you know your customers?</p>
+    <p>Getting to know your audience is one of the most important parts of growing a business and it can be as easy as sending a single email with a well-structured survey. With the in-depth understanding that you'll gain from conducting a customer satisfaction survey, you'll be able to create better online shopping experiences for your customers and build more targeted marketing campaigns that expand your influence and help you reach your ideal audience.</p>
+  </div>
+
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">
+    /**
+     * You must include the dependency on 'ngMaterial'
+     */
+    angular.module('BlankApp', ['ngMaterial']);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+// PANEL COMPONENT
+
+%panel {
+	height: 100vh;
+	position: relative;
+}
+
+.panel { @extend %panel;}
+
+	.panel--small {
+		@extend %panel;
+		height: 50vh;
+	}
+
+	.panel--smaller {
+		@extend %panel;
+		height: 20vh;
+	}
+
+	.panel__content {
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+	}
+
+	.panel__img-container	{ @extend %sticky-image-container;}
+
+		.panel__img { @extend %sticky-image;}

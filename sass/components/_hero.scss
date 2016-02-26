@@ -1,0 +1,22 @@
+// HERO COMPONENT
+
+.hero {
+	@extend %sticky-image-container;
+	height: 100vh;
+}
+
+	.hero__image {
+		@extend %sticky-image;
+	}
+
+	.hero__content {
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+	}
+	.hero__title {
+		color: $clr-white;
+		font-weight: bold;
+	}

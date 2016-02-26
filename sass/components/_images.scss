@@ -1,0 +1,16 @@
+// HERO COMPONENT
+
+%sticky-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+%sticky-image {
+	top: 0;
+	bottom: 0;
+	max-width: none;
+	min-width: 100%;
+  position: relative;
+
+  & img { display: block;}
+}

@@ -1,0 +1,117 @@
+/*
+	STYLES
+	Meekly forged by Yousemble
+	Copyright 2016 Yousemble
+*/
+[flex] {
+  border: 1px solid deepskyblue; }
+
+[layout*="row"] {
+  border: 1px dashed red; }
+
+.help-heading {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box; }
+
+.banner {
+  background-color: #ddd;
+  background-size: cover;
+  backround-position: center bottom;
+  background-image: url("https://images.unsplash.com/photo-1442589031151-61d5645469d7?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925"); }
+
+.banner-content {
+  min-height: 50%; }
+
+.fw-bold {
+  font-weight: bold; }
+
+.bgc--base {
+  background-color: #474747; }
+
+.clr-white {
+  color: #fff; }
+
+.push-bottom--large {
+  margin-bottom: 4rem; }
+
+.push-bottom {
+  margin-bottom: 1rem; }
+
+.wrap, .wrap--smaller, .wrap--small {
+  padding: 0 2rem; }
+
+.wrap {
+  max-width: 840px; }
+
+.wrap--smaller {
+  max-width: 480px; }
+
+.wrap--small {
+  max-width: 600px; }
+
+.hero, .panel__img-container {
+  position: relative;
+  overflow: hidden; }
+
+.hero__image, .panel__img {
+  top: 0;
+  bottom: 0;
+  max-width: none;
+  min-width: 100%;
+  position: relative; }
+  .hero__image img, .panel__img img {
+    display: block; }
+
+.hero {
+  height: 100vh; }
+
+.hero__content {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%); }
+
+.hero__title {
+  color: #fff;
+  font-weight: bold; }
+
+.panel, .panel--small, .panel--smaller {
+  height: 100vh;
+  position: relative; }
+
+.panel--small {
+  height: 50vh; }
+
+.panel--smaller {
+  height: 20vh; }
+
+.panel__content {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%); }
+
+.footer {
+  height: 25vh; }
+
+.card-image {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px; }
+  .card-image img {
+    position: absolute; }

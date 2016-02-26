@@ -1,0 +1,123 @@
+/*
+	STYLES
+	Meekly forged by Yousemble
+	Copyright 2016 Yousemble
+*/
+
+
+// :: VARS
+// --------------------------------------------------
+
+// Screen Sizes
+$screen-xs: 480px !default;
+$screen-sm: 768px !default;
+$screen-md: 992px !default;
+$screen-lg: 1200px !default;
+
+// Container Sizes
+$container-sm: 720px !default;
+$container-md: 940px !default;
+$container-lg: 1140px !default;
+
+
+
+// :: HELPERS
+// 		Unhash the following to view containers easily
+// --------------------------------------------------
+
+[flex] {
+	border: 1px solid deepskyblue;
+}
+
+[layout*="row"] {
+	border: 1px dashed red;
+}
+
+.help-heading {
+	max-width: $container-lg;
+	margin-right: auto;
+  margin-left: auto;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	padding-left: 30px;
+	padding-top: 40px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+
+
+// :: GENERAL
+// --------------------------------------------------
+
+.container {
+	max-width: $container-lg;
+	margin-right: auto;
+  margin-left: auto;
+	box-sizing: border-box;
+}
+
+
+.banner {
+	background-color: #ddd;
+	background-size: cover;
+	backround-position: center bottom;
+	background-image: url('https://images.unsplash.com/photo-1442589031151-61d5645469d7?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925');
+}
+
+.banner-content {
+	min-height: 50%;
+}
+
+// :: TYPOGRAPHY
+// --------------------------------------------------
+
+.fw-bold { font-weight: bold;}
+
+
+// :: HEADERS
+// --------------------------------------------------
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+
+
+// :: BACKGROUNDS
+// --------------------------------------------------
+.bgc--base {
+	background-color: #474747;
+}
+
+
+// :: COLORS
+// --------------------------------------------------
+$clr-white: #fff;
+
+.clr-white { color: $clr-white;}
+
+
+// :: IMPORTS
+// --------------------------------------------------
+@import 'margin-padding';
+@import 'components/wraps';
+@import 'components/images';
+@import 'components/hero';
+@import 'components/panel';
+@import 'components/footer';
+
+
+
+// :: CARDS
+// --------------------------------------------------
+.card-image {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	min-height: 500px;
+	img {
+		position:absolute;
+	}
+}
+
